@@ -10,7 +10,7 @@ import semver from "semver";
 
 console.debug("Running deprecate-old-versions.mjs");
 
-const plugin = "homebridge-nordpool-baltics";
+const plugin = "homebridge-awattar";
 
 // Fetch versions and deprecation message simultaneously
 const dataJSON = execSync(`npm view ${plugin} versions --json`);
