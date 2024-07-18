@@ -8,7 +8,7 @@ import { Cache } from 'file-system-cache';
 const pkg = require('../package.json');
 
 export const PLATFORM_NAME = 'aWATTar';
-export const PLUGIN_NAME = pkg.name;
+export const PLUGIN_NAME = 'homebridge-awattar';
 export const PLATFORM_MANUFACTURER = pkg.author.name;
 export const PLATFORM_VERSION = pkg.version;
 export const PLATFORM_MODEL = 'Electricity price sensors';
