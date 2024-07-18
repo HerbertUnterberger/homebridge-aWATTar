@@ -91,7 +91,7 @@ export const defaultService: SensorType = {
 };
 
 export function defaultPricesCache(api: API) {
-  const ns = 'homebridge-nordpool-baltics';
+  const ns = 'homebridge-awattar';
   const nsHash = 'b162cf22c8adb8fa829628b261839cad18dc3994';
   const storagePath = api.user.storagePath();
   const cacheDirectory = Path.join(storagePath, '.cache');
