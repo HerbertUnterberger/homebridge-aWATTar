@@ -1,5 +1,5 @@
 {
-    "pluginAlias": "aWATTar",
+    "pluginAlias": 'Platform_aWATTar',
     "pluginType": "platform",
     "singular": true,
     "schema": {
