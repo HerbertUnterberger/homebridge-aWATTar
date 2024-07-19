@@ -7,7 +7,7 @@ import { Cache } from 'file-system-cache';
 /* eslint @typescript-eslint/no-var-requires: "off" */
 const pkg = require('../package.json');
 
-export const PLATFORM_NAME = 'aWATTar';
+export const PLATFORM_NAME = 'Platform_aWATTar';
 export const PLUGIN_NAME = 'homebridge-awattar';
 export const PLATFORM_MANUFACTURER = pkg.author.name;
 export const PLATFORM_VERSION = pkg.version;
