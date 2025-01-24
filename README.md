@@ -90,7 +90,6 @@ If You need support with yourHomeKit Automation we are happy to make you an offe
 
 thx to Mantas Segzda
 
-
 ## Note ##
 
 Some Systems may say (Docker): no directory ".cache".
