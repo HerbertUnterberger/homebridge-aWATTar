@@ -214,6 +214,12 @@ export class Functions {
         if (value <= sortedPrices[0].price) {
           pricing.cheapestHour.push(hour);
         }
+        if (value <= sortedPrices[2].price) {
+          pricing.cheapest2Hours.push(hour);
+        }
+        if (value <= sortedPrices[2].price) {
+          pricing.cheapest3Hours.push(hour);
+        }
         if (value <= sortedPrices[3].price) {
           pricing.cheapest4Hours.push(hour);
         }

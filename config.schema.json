@@ -46,6 +46,18 @@
                     }
                 ]
             },
+            "cheapest2Hours": {
+                "required": true,
+                "type": "boolean",
+                "default": false,
+                "title": "Show 'cheapest 2 hours' sensor (Nordpool_cheapest4Hours)"
+            },
+            "cheapest3Hours": {
+                "required": true,
+                "type": "boolean",
+                "default": false,
+                "title": "Show 'cheapest 3 hours' sensor (Nordpool_cheapest4Hours)"
+            },
             "cheapest4Hours": {
                 "required": true,
                 "type": "boolean",

@@ -36,6 +36,8 @@ export interface Pricing {
     currently: number;
     currentHour: number;
     cheapestHour: number[];
+    cheapest2Hours: number[];
+    cheapest3Hours: number[];
     cheapest4Hours: number[];
     cheapest5Hours: number[];
     cheapest5HoursConsec: number[];
@@ -58,6 +60,8 @@ export let pricing: Pricing = {
   currently: 0.0001,
   currentHour: 0,
   cheapestHour: [],
+  cheapest2Hours: [],
+  cheapest3Hours: [],
   cheapest4Hours: [],
   cheapest5Hours: [],
   cheapest5HoursConsec: [],
@@ -77,6 +81,8 @@ export let pricing: Pricing = {
 export const defaultService: SensorType = {
   currently: null,
   cheapestHour: null,
+  cheapest2Hours: null,
+  cheapest3Hours: null,
   cheapest4Hours: null,
   cheapest5Hours: null,
   cheapest5HoursConsec: null,

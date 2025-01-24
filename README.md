@@ -89,3 +89,10 @@ If You need support with yourHomeKit Automation we are happy to make you an offe
 [Herbert Unterberger](mailto:office@greenmediaservice.tv?subject=[GitHub]%20Source%20Han%20Sans)
 
 thx to Mantas Segzda
+
+
+## Note ##
+
+Some Systems may say (Docker): no directory ".cache".
+Just add this directory manualy in the homebridge folder.
+mkdir .cache

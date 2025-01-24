@@ -36,7 +36,7 @@
     "electricity market"
   ],
   "engines": {
-    "node": "^18.17.0 || ^20.9.0",
+    "node": "^18.17.0 || ^20.9.0 || ^22.12.0",
     "homebridge": "^1.6.0 || ^v2.0.0-beta.20"
   },
   "main": "dist/index.js",
