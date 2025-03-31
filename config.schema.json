@@ -50,13 +50,13 @@
                 "required": true,
                 "type": "boolean",
                 "default": false,
-                "title": "Show 'cheapest 2 hours' sensor (Nordpool_cheapest4Hours)"
+                "title": "Show 'cheapest 2 hours' sensor (Nordpool_cheapest2Hours)"
             },
             "cheapest3Hours": {
                 "required": true,
                 "type": "boolean",
                 "default": false,
-                "title": "Show 'cheapest 3 hours' sensor (Nordpool_cheapest4Hours)"
+                "title": "Show 'cheapest 3 hours' sensor (Nordpool_cheapest3Hours)"
             },
             "cheapest4Hours": {
                 "required": true,
