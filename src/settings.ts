@@ -34,6 +34,7 @@ export interface NordpoolData {
 export interface Pricing {
     today: NordpoolData[];
     currently: number;
+    currentlyNeg: number;
     currentHour: number;
     cheapestHour: number[];
     cheapest2Hours: number[];
@@ -58,6 +59,7 @@ export interface Pricing {
 export let pricing: Pricing = {
   today: [],
   currently: 0.0001,
+  currentlyNeg: 0.0001,
   currentHour: 0,
   cheapestHour: [],
   cheapest2Hours: [],
@@ -80,6 +82,7 @@ export let pricing: Pricing = {
 
 export const defaultService: SensorType = {
   currently: null,
+  currentlyNeg: null,
   cheapestHour: null,
   cheapest2Hours: null,
   cheapest3Hours: null,
