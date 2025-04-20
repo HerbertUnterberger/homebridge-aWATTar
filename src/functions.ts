@@ -45,6 +45,7 @@ export class Functions {
     if (this.service.currently) {
       this.service.currently.getCharacteristic(this.platform.Characteristic.CurrentAmbientLightLevel)
         .updateValue(pricing.currently);
+    }
 
     // init light sensor for current price Negative
     this.service.currentlyNeg = this.accessory.getService('currentPrice') || this.accessory.addService(
