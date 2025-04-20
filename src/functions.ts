@@ -382,7 +382,7 @@ export class Functions {
     // set current price level on light sensor
     if (this.service.currently) {
       this.service.currently.getCharacteristic(this.platform.Characteristic.CurrentAmbientLightLevel)
-        .updateValue(pricing.currently >= 0.0001 ? pricing.currently : 0.0001);
+        .updateValue(pricing.currently); //>= 0.0001 ? pricing.currently : 0.0001);
     }
 
     // set price levels on relevant occupancy sensors
