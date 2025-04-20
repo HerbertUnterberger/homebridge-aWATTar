@@ -47,8 +47,8 @@ export class Functions {
         .updateValue(pricing.currently);
 
     // init light sensor for current price Negative
-    this.service.currentlyNeg = this.accessory.getService('-currentPrice') || this.accessory.addService(
-      this.platform.Service.LightSensor, '-currentPrice', '-currentPrice');
+    this.service.currentlyNeg = this.accessory.getService('currentPrice') || this.accessory.addService(
+      this.platform.Service.LightSensor, 'currentPrice', 'currentPrice');
 
     // set default price level Negative
     if (this.service.currentlyNeg) {
