@@ -357,7 +357,6 @@ export class Functions {
 
     if (pricing.today.length === 24 || pricing.today.length === 23 ) {
       pricing.currently = pricing.today[currentHour]['price'];
-      const currentNeg = pricing.currently * -1;
     } else {
       this.platform.log.warn('WARN: Unable to determine current hour price because data not available');
       return;
@@ -398,6 +397,7 @@ export class Functions {
 
      // set current price Negative level on light sensor
      if (this.service.currentlyNeg) {
+      const currentNeg = pricing.currently * -1;
       this.service.currentlyNeg.getCharacteristic(this.platform.Characteristic.CurrentAmbientLightLevel)
         .updateValue(currentNeg >= 0.0001 ? pricing.currently : 0.0001);
     }
