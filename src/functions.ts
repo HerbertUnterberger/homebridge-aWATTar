@@ -357,7 +357,7 @@ export class Functions {
 
     if (pricing.today.length === 24 || pricing.today.length === 23 ) {
       pricing.currently = pricing.today[currentHour]['price'];
-      let currentNeg = pricing.currently * -1;
+      const currentNeg = pricing.currently * -1;
     } else {
       this.platform.log.warn('WARN: Unable to determine current hour price because data not available');
       return;
