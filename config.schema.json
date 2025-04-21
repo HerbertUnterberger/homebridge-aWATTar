@@ -30,7 +30,7 @@
                 "description": "This parameter is used for hourly price and median calculations.",
                 "type": "integer",
                 "required": true,
-                "default": 1,
+                "default": 2,
                 "oneOf": [
                     {
                         "title": "0 Decimal - i.e. 4",
