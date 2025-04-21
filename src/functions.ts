@@ -399,7 +399,7 @@ export class Functions {
      if (this.service.currentlyNeg) {
       const currentNeg = pricing.currently * -1;
       this.service.currentlyNeg.getCharacteristic(this.platform.Characteristic.CurrentAmbientLightLevel)
-        .updateValue(currentNeg >= 0.0001 ? pricing.currently : 0.0001);
+        .updateValue(currentNeg >= 0.0001 ? currentNeg : 0.0001);
     }
 
     // set price levels on relevant occupancy sensors
