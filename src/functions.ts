@@ -48,13 +48,13 @@ export class Functions {
     }
 
     // init light sensor for current price Negative
-    this.service.currentlyNeg = this.accessory.getService('currentPrice') || this.accessory.addService(
-      this.platform.Service.LightSensor, 'currentPrice', 'currentPrice');
+    this.service.currentlyNeg = this.accessory.getService('currentPriceNegative') || this.accessory.addService(
+      this.platform.Service.LightSensor, 'currentPriceNegative', 'currentPriceNegative');
 
     // set default price level Negative
     if (this.service.currentlyNeg) {
       this.service.currentlyNeg.getCharacteristic(this.platform.Characteristic.CurrentAmbientLightLevel)
-        .updateValue((pricing.currently) * -1);    
+        .updateValue(pricing.currently);    
     }
 
     // hourly ticker
