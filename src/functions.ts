@@ -398,7 +398,7 @@ export class Functions {
      // set current price Negative level on light sensor
      if (this.service.currentlyNeg) {
       this.service.currentlyNeg.getCharacteristic(this.platform.Characteristic.CurrentAmbientLightLevel)
-        .updateValue(-pricing.currently >= 0.0001 ? pricing.currently : -0.0001);
+        .updateValue((pricing.currently * -1) >= 0.0001 ? pricing.currently : -0.0001);
     }
 
     // set price levels on relevant occupancy sensors
