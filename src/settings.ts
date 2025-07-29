@@ -107,22 +107,27 @@ export function defaultPricesCache(api: API) {
   const cacheDirectory = Path.join(storagePath, '.cache');
 
   // check if directory .cache exists
-  fs.access(cacheDirectory, (error) => {
-
-    // To check if the given directory already exists or not
-    if (error) {
-      // If current directory does not exist then create it
-      fs.mkdir(cacheDirectory, (error) => {
-        if (error) {
-          log(error);
-        } else {
-          log('New Directory created successfully !!');
-        }
-      });
-    } else {
+  //fs.access(cacheDirectory, (error) => {
+  if (!fs.existsSync(cacheDirectory)) {
+      fs.mkdirSync(cacheDirectory, { recursive: true });
+      log('New Directory created successfully !!');
+   } else {
       log('Given Directory already exists !!');
-    }
-  });
+    };
+    // To check if the given directory already exists or not
+    //if (error) {
+      // If current directory does not exist then create it
+    //  fs.mkdir(cacheDirectory, (error) => {
+    //    if (error) {
+    //      log(error);
+    //    } else {
+    //      log('New Directory created successfully !!');
+    //    }
+    //  });
+    //} else {
+    //  log('Given Directory already exists !!');
+    //}
+  
 
   // auto-cleanup of old cached files on init
   const files = fs.readdirSync(cacheDirectory);

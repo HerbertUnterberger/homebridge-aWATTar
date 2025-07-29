@@ -1,8 +1,8 @@
 # homebridge-aWATTar Austria #
 
-[![NPM Version](https://img.shields.io/npm/v/homebridge-nordpool-baltics)](https://www.npmjs.com/package/homebridge-nordpool-baltics/v/latest)
-[![NPM Downloads](https://img.shields.io/npm/dw/homebridge-nordpool-baltics)](https://www.npmjs.com/package/homebridge-nordpool-baltics?activeTab=versions)
-![NPM License](https://img.shields.io/npm/l/homebridge-nordpool-baltics)
+[![NPM Version](https://img.shields.io/npm/v/homebridge-awattar)](https://www.npmjs.com/package/homebridge-awattar/v/latest)
+[![NPM Downloads](https://img.shields.io/npm/dw/homebridge-awattar)](https://www.npmjs.com/package/homebridge-awattar?activeTab=versions)
+![NPM License](https://img.shields.io/npm/l/homebridge-awattar)
 [![donate](https://badgen.net/badge/paypal/donate/003087?icon=https://simpleicons.now.sh/paypal/fff)](https://paypal.me/herbertunterberger?country.x=AT&locale.x=de_DE)
 
 If your electricity is billed based on hourly rates through a smart meter, this plugin enables you to automate power-intensive appliances in accordance with aWATTar pricing levels. For example, this could apply to:
@@ -19,7 +19,7 @@ Currently, this plugin supports the following aWATTar electricity market areas:
 
 ## How To Install ##
 
-First, complete the [Homebridge setup](https://homebridge.io/how-to-install-homebridge). Next, install the `homebridge-nordpool-baltics` plugin by using the Homebridge Plugins Manager.
+First, complete the [Homebridge setup](https://homebridge.io/how-to-install-homebridge). Next, install the `homebridge-awattar` plugin by using the Homebridge Plugins Manager.
 
 ## Available Accessories ##
 
@@ -52,7 +52,7 @@ Here are a few automation examples, based on real-life use cases. Please note, t
 | ![Boiler1](images/boiler1.png) | ![Floor1](images/floor1.png)  | ![Car1](images/car1.png)   |
 | ![Boiler2](images/boiler2.png)  | ![Floor2](images/floor2.png)  | ![Car2](images/car2.png)  |
 
-Have you devised an ingenious automation making the most out of this plugin? Don't keep it to yourself - [share it using this form](https://github.com/msegzda/homebridge-nordpool-baltics/issues/new)!
+Have you devised an ingenious automation making the most out of this plugin? Don't keep it to yourself - [share it using this form](https://github.com//HerbertUnterberger/homebridge-aWATTar/issues/new)!
 
 ## Cheapest Consecutive Hours Calculation Logic ##
 
@@ -74,11 +74,11 @@ Motion sensor `cheapest5HoursConsec` calculation logic is the following:
 
 If you own solar power plant and it covers all of your household needs during specific daytime hours in month of June then configure the plugin accordingly.
 
-Configure your solar plant latitude ([locator here](https://www.latlong.net/)). Then plugin will apply automatic calculation of best solar yield hours in the months of March-September (inclusive). During best solar yield hours Nordpool price is overridden to 0.
+Configure your solar plant latitude ([locator here](https://www.latlong.net/)). Then plugin will apply automatic calculation of best solar yield hours in the months of March-September (inclusive). During best solar yield hours aWATTar price is overridden to 0.
 
 ## Important Remark About Timezones ##
 
-For accurate hour-to-price matching, it's important that the timezone of your homebridge system (the host) aligns with the timezone of the chosen Nordpool area. If there is a mismatch, the plugin will emit a warning in the log.
+For accurate hour-to-price matching, it's important that the timezone of your homebridge system (the host) aligns with the timezone of the chosen aWATTar area. If there is a mismatch, the plugin will emit a warning in the log. (default: Vienna)
 
 Additionally, please verify that your system's clock is regularly synchronized to ensure consistent and accurate hour-to-price ticking.
 
