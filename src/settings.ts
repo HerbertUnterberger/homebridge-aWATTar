@@ -113,7 +113,7 @@ export function defaultPricesCache(api: API) {
       log('New Directory created successfully !!');
    } else {
       log('Given Directory already exists !!');
-    };
+    }
     // To check if the given directory already exists or not
     //if (error) {
       // If current directory does not exist then create it
