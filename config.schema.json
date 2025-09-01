@@ -160,10 +160,10 @@
                 "type": "boolean"
             },
             "solarOverride": {
-                "title": "Solar Plant Nordpool Override",
+                "title": "Solar Plant Override",
                 "description": "If you own solar power plant, set best hours it covers ALL your household needs in JUNE. For more details go to <a href='https://github.com/msegzda/homebridge-nordpool-baltics/blob/latest/README.md#if-you-own-solar-power-plant' target='_blank'>plugin README</a>. Nordpool price will override to 0 during best solar power generation hours.",
                 "type": "boolean",
-                "required": true,
+                "required": false,
                 "default": false
             },
             "solarOverrideJuneHourStart": {
@@ -191,8 +191,8 @@
             "latitude": {
                 "title": "Latitude (<a href='https://www.latlong.net/' target='_blank'>locator here</a>) of your solar plant location:",
                 "required": false,
-                "default": 55,
-                "minimum": 50,
+                "default": 47.809490,
+                "minimum": 46,
                 "maximum": 71,
                 "type": "number",
                 "condition": {
